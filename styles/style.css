@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
-:root{
-    --cor-principal: #000000;
+:root {
+    --cor-primaria: #000000;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4FD;
     --cor-hover: #272727;
@@ -9,8 +9,6 @@
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -18,9 +16,10 @@
 
 body{
     box-sizing: border-box;
-    background-color: var(--cor-principal);
+    background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
+
 .cabecalho{
     padding: 2% 0% 0% 15%;
 }
@@ -36,7 +35,7 @@ body{
     text-decoration: none;
 }
 .apresentacao{
-    padding: 5% 15%; /*No 5% significa para largura superior e inferior já os 15% são para as laterais*/
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -73,7 +72,7 @@ body{
     font-weight: 400;
     font-size: 1.5rem;
 }
-.apresentacao__links__navegacao {
+.apresentacao__links__navegacao{
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -88,42 +87,34 @@ body{
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
 }
-
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color: var(--cor-hover);
 }
-
-.apresentacao__imagem {
+.apresentacao__imagem{
     width: 50%;
 }
-
 .rodape{
-    color: var(--cor-principal);
+    color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     padding: 24px;
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
-    
 }
 
 @media (max-width: 1200px) {
-
-    .cabecalho {
-        padding: 10%;
+    .cabecalho{
+         padding: 10%;  
     }
-
-
-    .cabecalho__menu {
+    .cabecalho__menu{
         justify-content: center;
     }
-
     .apresentacao{
         flex-direction: column-reverse;
+        padding: 5%;
     }
-    
-    .apresentacao__conteudo {
+    .apresentacao__conteudo{
         width: auto;
     }
 }
